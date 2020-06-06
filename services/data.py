@@ -5,7 +5,7 @@ import subprocess
 data = {
     "ad34f389": {
         'index': 0,
-        'run': '../droneface-pop/LoadTrained.py'
+        'run': 'services/test00.py'
     },
     "bd3f8c47": {
         'index': 1,
