@@ -8,6 +8,7 @@ python -m flask run
 ```
 
 For powershell to allow hot reload
-```
+```powershell
 $env:FLASK_ENV = "development"
+# $env:FLASK_ENV = "production"
 ```
