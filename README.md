@@ -15,6 +15,12 @@ Client server to obtain **Drone as a Service** and **Drone as a platform**
 Init server by running the following command at the root of the project
 
 ```bash
+python app.py
+```
+
+Or by flask package
+
+```bash
 python -m flask run
 ```
 

@@ -5,19 +5,19 @@ import subprocess
 data = {
     "ad34f389": {
         'index': 0,
-        'run': 'services/test00.py'
+        'run': 'services/rtest/test00.py'
     },
     "bd3f8c47": {
         'index': 1,
-        'run': 'services/test01.py'
+        'run': 'services/rtest/test01.py'
     },
     "0aa433d2": {
         'index': 2,
-        'run': 'services/test02.py'
+        'run': 'services/rtest/test02.py'
     },
     "a73cdae8": {
         'index': 3,
-        'run': 'services/test03.py'
+        'run': 'services/rtest/test03.py'
     },
 }
 
