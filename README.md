@@ -2,6 +2,8 @@
 
 Client server to obtain **Drone as a Service** and **Drone as a platform**
 
+![droneface](doc/droneface.jpeg)
+
 ## Table of contents
 * [Table of contents](#table-of-contents)
 * [Start server](#start-server)
