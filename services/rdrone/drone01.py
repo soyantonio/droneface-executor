@@ -2,11 +2,11 @@
 
 # Import the necessary modules
 import threading
-import services.drone.service as drone
+from drone.service import receive, choose_routine, close_socket
 
-receiveThread = threading.Thread(target=drone.receive)
+receiveThread = threading.Thread(target=receive)
 receiveThread.daemon = True
 receiveThread.start()
 
-drone.choose_routine(1)
-drone.close_socket()
+choose_routine(1)
+close_socket()
