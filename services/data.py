@@ -18,7 +18,7 @@ data = {
     "a73cdae8": {
         'index': 3,
         'run': 'services/test03.py'
-    }
+    },
 }
 
 
