@@ -21,6 +21,10 @@ data = {
         'index': 3,
         'run': 'services/rdrone/drone03.py'
     },
+    "stop": {
+        'index': 4,
+        'run': '.'
+    },
 }
 
 
