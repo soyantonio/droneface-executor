@@ -19,6 +19,10 @@ data = {
         'index': 3,
         'run': 'services/rclass/r03.py'
     },
+    "stop": {
+        'index': 4,
+        'run': '.'
+    },
 }
 
 

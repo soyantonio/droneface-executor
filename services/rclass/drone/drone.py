@@ -49,42 +49,42 @@ class Drone:
         self._init_mission("Box rutine iniciating... ")
 
         for i in range(4):
-            self.send("forward " + str(50), 4)
-            self.send("cw " + str(90), 4)
-        self.send("up " + str(50), 4)
+            self.send("forward " + str(50), 8)
+            self.send("cw " + str(90), 8)
+        self.send("up " + str(50), 8)
         for i in range(4):
-            self.send("forward " + str(50), 4)
-            self.send("cw " + str(90), 4)
+            self.send("forward " + str(50), 8)
+            self.send("cw " + str(90), 8)
 
-        self.send("ccw " + str(360), 8)
+        self.send("ccw " + str(360), 10)
         self._success_mission()
 
     def star_rutine(self):
         self._init_mission("Star rutine iniciating... ")
 
         for i in range(5):
-            self.send("forward " + str(75), 4)
-            self.send("ccw " + str(324), 5)
-            self.send("forward " + str(75), 4)
-            self.send("cw " + str(252), 5)
+            self.send("forward " + str(75), 8)
+            self.send("ccw " + str(324), 10)
+            self.send("forward " + str(75), 8)
+            self.send("cw " + str(252), 8)
 
-        self.send("ccw " + str(360), 8)
+        self.send("ccw " + str(360), 10)
         self._success_mission()
 
     def up_down_180(self):
         self._init_mission("up down 180 rutine iniciating... ")
 
         for i in range(2):
-            self.send("up " + str(50), 3)
-            self.send("cw " + str(180), 4)
-            self.send("down " + str(50), 3)
-            self.send("cw " + str(180), 4)
-            self.send("up " + str(50), 3)
-            self.send("ccw " + str(180), 4)
-            self.send("down " + str(50), 3)
-            self.send("ccw " + str(180), 4)
+            self.send("up " + str(50), 10)
+            self.send("cw " + str(180), 8)
+            self.send("down " + str(50), 10)
+            self.send("cw " + str(180), 8)
+            self.send("up " + str(50), 10)
+            self.send("ccw " + str(180), 8)
+            self.send("down " + str(50), 10)
+            self.send("ccw " + str(180), 8)
 
-        self.send("ccw " + str(360), 7)
+        self.send("ccw " + str(360), 10)
         self._success_mission()
 
     def launch(self, subject_id):
@@ -108,6 +108,7 @@ class Drone:
         self.send("takeoff", 5)
 
     def _success_mission(self):
+        self.send("land", 5)
         self.send("land", 5)
         print("Mission completed successfully!")
         self.sock.close()
