@@ -10,7 +10,7 @@ class Drone:
         self.local_address = ('', 9000)
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.sock.bind(self.local_address)
-        self.receiveThread = threading.Thread(target=self.drone.receive)
+        self.receiveThread = threading.Thread(target=self.receive)
         self.receiveThread.daemon = True
         self.receiveThread.start()
 

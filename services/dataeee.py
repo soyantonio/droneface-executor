@@ -7,19 +7,19 @@ import subprocess
 data = {
     "ad34f389": {
         'index': 0,
-        'run': 'services/rdrone/drone00.py'
+        'run': 'services/rclass/r00.py'
     },
     "bd3f8c47": {
         'index': 1,
-        'run': 'services/rdrone/drone01.py'
+        'run': 'services/rclass/r01.py'
     },
     "0aa433d2": {
         'index': 2,
-        'run': 'services/rdrone/drone02.py'
+        'run': 'services/rclass/r02.py'
     },
     "a73cdae8": {
         'index': 3,
-        'run': 'services/rdrone/drone03.py'
+        'run': 'services/rclass/r03.py'
     },
     "stop": {
         'index': 4,
