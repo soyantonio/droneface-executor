@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+
+from flask import Flask, abort
+import services.dataeee as services
+
+app = Flask(__name__)
+executor = services.Executor()
+
+
+@app.route('/api/services/<service_id>')
+def hello_world(service_id):
+    if services.is_not_present(service_id):
+        abort(404)
+    msg = executor.run(service_id)
+    return msg
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000', debug=True)
